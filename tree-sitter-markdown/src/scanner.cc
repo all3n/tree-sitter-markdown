@@ -9,6 +9,13 @@
 using std::vector;
 using std::memcpy;
 
+#ifndef uint8_t
+typedef unsigned char uint8_t;
+#define uint8_t uint8_t
+#define UINT8_MAX (255)
+#endif
+
+
 namespace TreeSitterMarkdown {
 
 // For explanation of the tokens see grammar.js
